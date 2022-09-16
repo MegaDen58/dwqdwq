@@ -15,7 +15,6 @@ public class Main {
 
 class AnimalThread extends Thread{
     String animalName;
-    int counter;
 
     AnimalThread(String name, int priority){
         animalName = name;
@@ -24,7 +23,6 @@ class AnimalThread extends Thread{
 
     public void run(){
         for(int i = 0; i <= 1000; i += 100){
-            this.counter = i;
             if(animalName.equals("Rabbit") && i == 700){
                 this.setPriority(1);
             }
