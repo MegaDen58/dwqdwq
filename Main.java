@@ -3,7 +3,7 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Start!");
+        System.out.println("Start!!");
 
         AnimalThread rabbit = new AnimalThread("Rabbit", 5);
         rabbit.start();
